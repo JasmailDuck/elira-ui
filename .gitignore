@@ -40,3 +40,4 @@ next-env.d.ts
 # Turborepo task cache
 .turbo
 .cache
+.npmrc
