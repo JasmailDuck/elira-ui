@@ -1,4 +1,5 @@
 import React from "react";
+import { T_EliraProvidor, T_EliraThemeConfig } from "./types";
 
 const initData: T_EliraThemeConfig = {
   theme: {},
