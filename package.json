@@ -1,0 +1,15 @@
+{
+    "name": "elira-ui-global",
+    "scripts": {
+        "build": "turbo run build",
+        "dev": "turbo run dev"
+    },
+    "devDependencies": {
+        "turbo": "1.12.5"
+    },
+    "workspaces": [
+        "apps/*",
+        "packages/*"
+    ],
+    "packageManager": "bun@1.0.30"
+}
