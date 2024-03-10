@@ -1,5 +1,5 @@
 {
-  "name": "elira-ui",
+  "name": "@elira/ui",
   "description": "A a stipped down Ui packages that supports theme objects ",
   "type": "module",
   "author": {

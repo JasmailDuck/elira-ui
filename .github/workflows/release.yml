@@ -1,0 +1,52 @@
+name: Release
+
+on:
+  push:
+    paths:
+      - ".changeset/**"
+      - "packages/**"
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout branch
+      uses: actions/checkout@v4
+
+    - name: Setup Bun Environment
+      uses: oven-sh/setup-bun@v1
+
+    - name: Setup NPM
+      uses: actions/setup-node@v3
+
+    - name: Setup Git User
+      shell: bash
+      run: |
+        git config user.name "${GITHUB_ACTOR}"
+        git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+
+    - name: Install Dependencies
+      run: bun install
+
+    - name: Build
+      run: bun run build:ui
+
+    - name: Create Release PR or Publish to NPM
+      id: changesets
+      uses: changesets/action@v1
+      with:
+        publish: bun run release
+        title: "ci(changesets): :package: version packages"
+        commit: "ci(changesets): version packages"
+        setupGitUser: false
+
+        env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

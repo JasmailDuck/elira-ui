@@ -1,15 +1,19 @@
 {
-    "name": "elira-ui-global",
-    "scripts": {
-        "build": "turbo run build --filter=!docs ",
-        "dev": "turbo run dev"
-    },
-    "devDependencies": {
-        "turbo": "1.12.5"
-    },
-    "workspaces": [
-        "apps/*",
-        "packages/*"
-    ],
-    "packageManager": "bun@1.0.30"
+  "name": "elira",
+  "scripts": {
+    "build:ui": "turbo run build --filter=@elira/ui ",
+    "build:docs": " turbo run build --filter=@elira/docs",
+    "dev": "turbo run dev",
+    "version": "changeset version",
+    "release": "changeset publish"
+  },
+  "devDependencies": {
+    "turbo": "1.12.5",
+    "@changesets/cli": "^2.27.1"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "packageManager": "bun@1.0.30"
 }
