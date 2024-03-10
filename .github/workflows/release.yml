@@ -24,6 +24,9 @@ jobs:
 
     - name: Setup NPM
       uses: actions/setup-node@v3
+      with:
+        node-version-file : ".nvmrc"
+        registry-url: "https://registry.npmjs.org"
 
     - name: Setup Git User
       shell: bash
