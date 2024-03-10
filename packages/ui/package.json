@@ -10,13 +10,16 @@
     "url": "https://github.com/JasmailDuck/elira-ui",
     "directory": "packages/ui"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "version": "0.0.2",
   "scripts": {
     "build": "tsup src --format cjs,esm --dts"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "private": false,
   "main": "./dist/index.js",
