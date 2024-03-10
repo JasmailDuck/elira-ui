@@ -40,11 +40,11 @@ jobs:
     - name: Build
       run: bun run build:ui
 
-    - name: Authenticate With NPM
+    - name: Creating .npmrc
       run: |
-        echo "registry=https://registry.npmjs.org/" >> .npmrc
-        echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> .npmrc
-        npm whoami
+        cat << EOF > "$HOME/.npmrc"
+          //registry.npmjs.org/:_authToken=$NPM_TOKEN
+        EOF
       env:
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 

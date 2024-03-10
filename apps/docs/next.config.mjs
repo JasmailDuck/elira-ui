@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    transpilePackages: ["@elira/ui"]
+    transpilePackages: ["@elira-ui/ui"]
 };
 
 export default nextConfig;
