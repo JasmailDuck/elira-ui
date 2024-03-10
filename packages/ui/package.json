@@ -7,11 +7,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/JasmailDuck/elira-ui"
+    "url": "https://github.com/JasmailDuck/elira-ui",
+    "directory": "packages/ui"
   },
+  "files": ["dist"],
   "version": "0.0.2",
   "scripts": {
     "build": "tsup src --format cjs,esm --dts"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "private": false,
   "main": "./dist/index.js",
