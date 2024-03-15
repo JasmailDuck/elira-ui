@@ -1,5 +1,11 @@
 # @elira-ui/ui
 
+## 0.0.5
+
+### Patch Changes
+
+- ed37e6a: Testing out export of modules
+
 ## 0.0.4
 
 ### Patch Changes
