@@ -1,8 +1,3 @@
-import {
-  EliraThemeContext,
-  EliraThemeProvider,
-} from "./components/Providers/Provider";
+export * from "./components/Providers/Provider"
 
-import Tooltip from "./components/Tooltip/Tooltip";
-
-export { EliraThemeContext, EliraThemeProvider, Tooltip };
+export * from "./components/Tooltip/Tooltip"
