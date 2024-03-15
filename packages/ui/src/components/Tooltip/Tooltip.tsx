@@ -45,4 +45,4 @@ const Tooltip: React.FC<T_Tooltip> = ({ children, message }) => {
   );
 };
 
-export default Tooltip;
+export { Tooltip };
