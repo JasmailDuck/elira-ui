@@ -1,27 +1,30 @@
 {
-    "name": "elira-ui",
-    "author": {
-        "name": "Jasmail"
-    },
-    "description": "Elira Ui",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/JasmailDuck/elira-ui"
-    },
-    "scripts": {
-        "build:ui": "turbo run build --filter=@elira-ui/ui ",
-        "build:docs": " turbo run build --filter=@elira-ui/docs",
-        "dev": "turbo run dev",
-        "version": "changeset version",
-        "release": "changeset publish"
-    },
-    "devDependencies": {
-        "turbo": "1.12.5",
-        "@changesets/cli": "^2.27.1"
-    },
-    "workspaces": [
-        "apps/*",
-        "packages/*"
-    ],
-    "packageManager": "bun@1.0.30"
+  "name": "elira-ui",
+  "author": {
+    "name": "Jasmail"
+  },
+  "description": "Elira Ui",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JasmailDuck/elira-ui"
+  },
+  "scripts": {
+    "build:ui": "turbo run build --filter=@elira-ui/ui ",
+    "build:docs": " turbo run build --filter=@elira-ui/docs",
+    "dev": "turbo run dev",
+    "version": "changeset version",
+    "release": "changeset publish"
+  },
+  "devDependencies": {
+    "turbo": "1.12.5",
+    "@changesets/cli": "^2.27.1"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "packageManager": "bun@1.0.30",
+  "dependencies": {
+    "tailwind-merge": "^2.2.1"
+  }
 }
