@@ -1,5 +1,11 @@
 # @elira-ui/ui
 
+## 0.0.6
+
+### Patch Changes
+
+- 7bec10c: Redid export
+
 ## 0.0.5
 
 ### Patch Changes
