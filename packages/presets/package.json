@@ -1,0 +1,33 @@
+{
+    "name": "@elira-ui/presets",
+    "version": "0.0.0",
+    "description": "Elira Tailwind CSS Preset",
+    "keywords": [
+        "elira",
+        "tailwindcss"
+    ],
+    "homepage": "https://github.com/JasmailDuck/elira-ui",
+    "bugs": {
+        "url": "https://github.com/JasmailDuck/elira-ui/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/JasmailDuck/elira-ui",
+        "directory": "packages/presets"
+    },
+    "scripts": {
+        "build": "tsup base-preset --format esm --dts"
+    },
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+    },
+    "files": [
+        "dist"
+    ],
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "devDependencies": {
+        "tsup": "^8.0.2"
+    }
+}

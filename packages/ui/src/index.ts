@@ -1,2 +1,2 @@
-export * from "./components/Providers/Provider"
-export * from "./components/Tooltip/Tooltip"
+export * from "./components/Providers";
+export * from "./components/Tooltip";

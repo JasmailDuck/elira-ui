@@ -1,9 +1,10 @@
+import { ReactHTMLElement } from "react";
+
 export interface T_TooltipTheme {
-  cssStyle?: React.CSSProperties;
   className?: string;
 }
 
-export interface T_Tooltip {
+export interface T_Tooltip extends T_TooltipTheme{
   message: string;
-  children: React.ReactNode | string;
+  children: React.ReactNode | string
 }
