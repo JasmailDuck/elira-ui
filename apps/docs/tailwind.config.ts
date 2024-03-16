@@ -6,8 +6,13 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  presets: [require("@elira-ui/presets/base-preset")],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        red: "#FF0036",
+      },
+    },
   },
   plugins: [],
 };

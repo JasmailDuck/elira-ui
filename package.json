@@ -9,7 +9,7 @@
     "url": "https://github.com/JasmailDuck/elira-ui"
   },
   "scripts": {
-    "build:ui": "turbo run build --filter=@elira-ui/ui ",
+    "build": "turbo run build --filter=!@elira-ui/docs",
     "build:docs": " turbo run build --filter=@elira-ui/docs",
     "dev": "turbo run dev",
     "version": "changeset version",
@@ -23,8 +23,5 @@
     "apps/*",
     "packages/*"
   ],
-  "packageManager": "bun@1.0.30",
-  "dependencies": {
-    "tailwind-merge": "^2.2.1"
-  }
+  "packageManager": "bun@1.0.30"
 }

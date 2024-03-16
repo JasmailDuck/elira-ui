@@ -22,15 +22,10 @@ export const Tooltip: React.FC<T_Tooltip> = ({
           {children}
         </TooltipPrimitive.Trigger>
 
-        <TooltipPrimitive.TooltipContent>
-          <div
-            className={twMerge(
-              C_EliraTheme.theme.tooltip?.className,
-              className
-            )}
-          >
-            {message}
-          </div>
+        <TooltipPrimitive.TooltipContent
+          className={twMerge(C_EliraTheme.theme.tooltip?.className, className)}
+        >
+          {message}
         </TooltipPrimitive.TooltipContent>
       </TooltipPrimitive.Root>
     </TooltipPrimitive.TooltipProvider>

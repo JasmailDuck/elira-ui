@@ -1,0 +1,13 @@
+{
+  "include": ["base-preset/index.ts"],
+  "compilerOptions": {
+    // Generate d.ts files
+    "declaration": true,
+    // Types should go into this directory.
+    // Removing this would place the .d.ts files
+    // next to the .js files
+    "outDir": "dist",
+    "strict": true,
+    "skipLibCheck": true
+  }
+}

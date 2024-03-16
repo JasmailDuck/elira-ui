@@ -9,17 +9,16 @@ export default function Home() {
         theme={{
           theme: {
             tooltip: {
-              className: " bg-white",
+              className: " ",
             },
           },
         }}
       >
+        <Tooltip className=" bg-oranged" message="LOL">this is a tooltip</Tooltip>
 
-          <Tooltip message="LOL">this is a tooltip</Tooltip>
-
-
-          <Tooltip message="Dmannnnnnnn">< p>this is a another tooltip</p></Tooltip>
-
+        <Tooltip message="Dmannnnnnnn">
+          <p>this is a another tooltip</p>
+        </Tooltip>
       </EliraThemeProvider>
     </main>
   );
