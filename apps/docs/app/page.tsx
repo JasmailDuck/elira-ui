@@ -9,12 +9,12 @@ export default function Home() {
         theme={{
           theme: {
             tooltip: {
-              className: " ",
+              className: " animate-tooltipTopOpen",
             },
           },
         }}
       >
-        <Tooltip className=" bg-oranged" message="LOL">this is a tooltip</Tooltip>
+        <Tooltip className=" " message="LOL">this is a tooltip</Tooltip>
 
         <Tooltip message="Dmannnnnnnn">
           <p>this is a another tooltip</p>

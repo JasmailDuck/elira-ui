@@ -3,8 +3,8 @@ module.exports = {
     extend: {
       keyframes: {
         tooltip_top_open: {
-          "0%": { opacity: 0, y: -10 },
-          "100%": { opacity: 1, y: 0 },
+          "0%": { opacity: 0, transform: "translateY(42px)" },
+          "100%": { opacity: 1, transform: "translateY(0px)" },
         },
         tooltip_top_close: {},
         tooltip_bottom_open: {},
@@ -15,10 +15,7 @@ module.exports = {
         tooltip_left_close: {},
       },
       animation: {
-        tooltipTopOpen: "tooltip_top_open 1s ease-in-out infinite",
-      },
-      colors: {
-        oranged: "#ff7849",
+        tooltipTopOpen: "tooltip_top_open 0.5s ease-in-out",
       },
     },
   },
