@@ -1,5 +1,11 @@
 # @elira-ui/ui
 
+## 0.0.7
+
+### Patch Changes
+
+- affad0b: Made preset into seperate package and optimize tooltip
+
 ## 0.0.6
 
 ### Patch Changes
