@@ -1,3 +1,4 @@
+import { T_ButtonTheme } from "./components/Button/types";
 import { T_TooltipTheme } from "./components/Tooltip/T_tooltip";
 
 export interface T_EliraProvidor {
@@ -11,5 +12,6 @@ export interface T_EliraThemeConfig {
 }
 
 export interface T_ComponentThemeConfig {
+  button: T_ButtonTheme;
   tooltip?: T_TooltipTheme;
 }

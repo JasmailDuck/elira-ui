@@ -2,20 +2,53 @@ module.exports = {
   theme: {
     extend: {
       keyframes: {
-        tooltip_top_open: {
-          "0%": { opacity: 0, transform: "translateY(42px)" },
+        // Default open (directional) keyframes for tooltip
+        "tooltip-open-t": {
+          "0%": { opacity: 0, transform: "translateY(10px)" },
           "100%": { opacity: 1, transform: "translateY(0px)" },
         },
-        tooltip_top_close: {},
-        tooltip_bottom_open: {},
-        tooltip_bottom_close: {},
-        tooltip_right_open: {},
-        tooltip_right_close: {},
-        tooltip_left_open: {},
-        tooltip_left_close: {},
+        // "tooltip-open-b": {
+        //   "0%": { opacity: 0, transform: "translateY(-10px)" },
+        //   "100%": { opacity: 1, transform: "translateY(0px)" },
+        // },
+        // "tooltip-open-l": {
+        //   "0%": { opacity: 0, transform: "translateX(10px)" },
+        //   "100%": { opacity: 1, transform: "translateX(0px)" },
+        // },
+        // "tooltip-open-r": {
+        //   "0%": { opacity: 0, transform: "translateX(-10px)" },
+        //   "100%": { opacity: 1, transform: "translateX(0px)" },
+        // },
+
+        // // Default close (directional) keyframes for tooltip
+        "tooltip-close-t": {
+          "0%": { opacity: 1, transform: "translateY(0px)" },
+          "100%": { opacity: 0, transform: "translateY(10px)" },
+        },
+        // "tooltip-close-b": {
+        //   "0%": { opacity: 1, transform: "translateY(0px)" },
+        //   "100%": { opacity: 0, transform: "translateY(-10px)" },
+        // },
+        // "tooltip-close-l": {
+        //   "0%": { opacity: 1, transform: "translateX(0px)" },
+        //   "100%": { opacity: 0, transform: "translateX(10px)" },
+        // },
+        // "tooltip-close-r": {
+        //   "0%": { opacity: 1, transform: "translateX(0px)" },
+        //   "100%": { opacity: 0, transform: "translateX(-10px)" },
+        // },
       },
       animation: {
-        tooltipTopOpen: "tooltip_top_open 0.5s ease-in-out",
+        "tooltip-open-top": "tooltip-open-t 0.5s cubic-bezier(.67,0,0,1.02)",
+        // "tooltip-open-bottom": "tooltip-open-b 0.5s cubic-bezier(.67,0,0,1.02)",
+        // "tooltip-open-left": "tooltip-open-l 0.5s cubic-bezier(.67,0,0,1.02)",
+        // "tooltip-open-right": "tooltip-open-r 0.5s cubic-bezier(.67,0,0,1.02)",
+        "tooltip-close-top": "tooltip-close-t 0.5s cubic-bezier(.67,0,0,1.02)",
+        // "tooltip-close-bottom":
+        //   "tooltip-close-b 0.5s cubic-bezier(.67,0,0,1.02)",
+        // "tooltip-close-left": "tooltip-close-l 0.5s cubic-bezier(.67,0,0,1.02)",
+        // "tooltip-close-right":
+        //   "tooltip-close-r 0.5s cubic-bezier(.67,0,0,1.02)",
       },
     },
   },
