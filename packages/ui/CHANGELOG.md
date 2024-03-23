@@ -1,5 +1,11 @@
 # @elira-ui/ui
 
+## 0.0.8
+
+### Patch Changes
+
+- a37512f: Added layout and updated packages
+
 ## 0.0.7
 
 ### Patch Changes
