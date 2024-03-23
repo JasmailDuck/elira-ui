@@ -16,12 +16,12 @@
     "release": "changeset publish"
   },
   "devDependencies": {
-    "turbo": "1.12.5",
+    "turbo": "1.13.0",
     "@changesets/cli": "^2.27.1"
   },
   "workspaces": [
     "apps/*",
     "packages/*"
   ],
-  "packageManager": "bun@1.0.30"
+  "packageManager": "bun@1.0.35"
 }

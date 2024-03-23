@@ -9,9 +9,7 @@ const config: Config = {
   presets: [require("@elira-ui/presets/base-preset")],
   theme: {
     extend: {
-      colors: {
-        red: "#FF0036",
-      },
+      
     },
   },
   plugins: [],
