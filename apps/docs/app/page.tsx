@@ -1,10 +1,5 @@
 "use client";
-import {
-  Button,
-  EliraThemeProvider,
-  Layout,
-  Tooltip,
-} from "@elira-ui/ui/index";
+import { Button, EliraThemeProvider, Tooltip } from "@elira-ui/ui/index";
 
 export default function Home() {
   return (
@@ -26,23 +21,22 @@ export default function Home() {
               ],
               buttonSizes: [{ name: "lg", className: " h-[40px]" }],
             },
+
           },
         }}
       >
-        <Layout>
-          <Tooltip className=" " message="">
-            This is a tooltip
-          </Tooltip>
+        <Tooltip className=" " message="">
+          This is a tooltip
+        </Tooltip>
 
+        <Button variant="normal" size="lg">
+          This is a button
+        </Button>
+        <Tooltip className=" " message="A tooltip appeared">
           <Button variant="normal" size="lg">
-            This is a button
+            This is a button with tooltip
           </Button>
-          <Tooltip className=" " message="A tooltip appeared">
-            <Button variant="normal" size="lg">
-              This is a button with tooltip
-            </Button>
-          </Tooltip>
-        </Layout>
+        </Tooltip>
       </EliraThemeProvider>
     </main>
   );
