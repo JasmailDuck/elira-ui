@@ -1,4 +1,3 @@
-import { IVariantDefinition } from "../../types";
 import React from "react";
 
 export interface ILayoutTheme {
