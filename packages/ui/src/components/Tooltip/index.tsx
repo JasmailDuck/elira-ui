@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import * as TooltipPrimitive from "@radix-ui/react-tooltip";
-import { T_Tooltip } from "./T_tooltip";
+import { T_Tooltip } from "./types";
 import { twMerge } from "tailwind-merge";
 import { EliraThemeContext } from "../Providers";
 
@@ -8,6 +8,7 @@ export const Tooltip: React.FC<T_Tooltip> = ({
   children,
   message,
   className,
+  onChange,
 }) => {
   //---------------------------- CONTEXT  ---------------------------- //
 
@@ -17,7 +18,7 @@ export const Tooltip: React.FC<T_Tooltip> = ({
 
   return (
     <TooltipPrimitive.TooltipProvider delayDuration={200}>
-      <TooltipPrimitive.Root>
+      <TooltipPrimitive.Root onOpenChange={onChange}>
         <TooltipPrimitive.Trigger asChild={typeof children != "string"}>
           {children}
         </TooltipPrimitive.Trigger>

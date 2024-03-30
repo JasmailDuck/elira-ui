@@ -1,18 +1,17 @@
 import React, { useContext } from "react";
-import { ILayout } from "./types";
+import { ICardTypes } from "./types";
 import { twMerge } from "tailwind-merge";
 import { EliraThemeContext } from "../Providers";
 
-export const Layout = React.forwardRef<HTMLDivElement, ILayout>(
+export const Card = React.forwardRef<HTMLDivElement, ICardTypes>(
   ({ className, children, variant, ...rest }, ref) => {
     const C_EliraTheme = useContext(EliraThemeContext);
 
-    const LAYOUT_VARIANT = C_EliraTheme.theme.layout
-      ? C_EliraTheme.theme.layout[variant]
+    const CARD_VARIANT = C_EliraTheme.theme.card
+      ? C_EliraTheme.theme.card[variant]
       : undefined;
-
     return (
-      <div ref={ref} className={twMerge(LAYOUT_VARIANT, className)} {...rest}>
+      <div ref={ref} className={twMerge(CARD_VARIANT, className)} {...rest}>
         {children}
       </div>
     );

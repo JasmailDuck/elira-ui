@@ -1,9 +1,9 @@
-import { T_EliraProvidor, T_EliraThemeConfig } from "../../types";
+import { T_EliraProvidor, IEliraThemeConfig } from "../../types";
 import React from "react";
 
-
-
-const EliraThemeContext = React.createContext<T_EliraThemeConfig>({} as T_EliraThemeConfig);
+const EliraThemeContext = React.createContext<IEliraThemeConfig>(
+  {} as IEliraThemeConfig
+);
 
 const EliraThemeProvider: React.FC<T_EliraProvidor> = ({ children, theme }) => {
   return (
