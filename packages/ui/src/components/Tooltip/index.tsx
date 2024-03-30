@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import * as TooltipPrimitive from "@radix-ui/react-tooltip";
-import { T_Tooltip } from "./types";
+import { ITooltip } from "./types";
 import { twMerge } from "tailwind-merge";
 import { EliraThemeContext } from "../Providers";
 
-export const Tooltip: React.FC<T_Tooltip> = ({
+export const Tooltip: React.FC<ITooltip> = ({
   children,
   message,
   className,
