@@ -1,7 +1,10 @@
+import { IVariantDefinition } from "../../types";
 import React from "react";
 
-export interface T_LayoutTheme {
-  className: string;
+export interface ILayoutTheme {
+  [key: string]: string;
 }
 
-export interface T_Layout extends React.HtmlHTMLAttributes<HTMLDivElement> {}
+export interface ILayout extends React.HtmlHTMLAttributes<HTMLDivElement> {
+  variant: string;
+}
