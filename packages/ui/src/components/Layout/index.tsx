@@ -1,3 +1,4 @@
+"use client";
 import React, { useContext } from "react";
 import { ILayout } from "./types";
 import { twMerge } from "tailwind-merge";
