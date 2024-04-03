@@ -8,8 +8,8 @@ export const Page = React.forwardRef<HTMLDivElement, IPage>(
   ({ className, children, variant, ...rest }, ref) => {
     const C_EliraTheme = useContext(EliraThemeContext);
 
-    const PAGE_VARIANT = C_EliraTheme.theme.layout
-      ? C_EliraTheme.theme.layout[variant]
+    const PAGE_VARIANT = C_EliraTheme.theme.page
+      ? C_EliraTheme.theme.page[variant]
       : undefined;
 
     return (
