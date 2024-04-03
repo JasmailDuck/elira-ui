@@ -1,5 +1,11 @@
 # @elira-ui/ui
 
+## 0.0.10
+
+### Patch Changes
+
+- b97e23f: Change for nextjs
+
 ## 0.0.9
 
 ### Patch Changes
