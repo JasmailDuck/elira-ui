@@ -1,3 +1,4 @@
+"use client";
 import { T_EliraProvidor, IEliraThemeConfig } from "../../types";
 import React from "react";
 

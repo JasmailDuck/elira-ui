@@ -1,3 +1,4 @@
+"use client";
 import * as AccordionPrimitive from "@radix-ui/react-accordion";
 import React, { useContext } from "react";
 import { EliraThemeContext } from "../Providers";

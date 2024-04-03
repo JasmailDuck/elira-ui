@@ -1,3 +1,4 @@
+"use client";
 import React, { useContext } from "react";
 import { ICardTypes } from "./types";
 import { twMerge } from "tailwind-merge";
