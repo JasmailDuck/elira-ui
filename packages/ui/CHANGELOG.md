@@ -1,5 +1,11 @@
 # @elira-ui/ui
 
+## 0.0.12
+
+### Patch Changes
+
+- 785d15c: fix typo
+
 ## 0.0.11
 
 ### Patch Changes
