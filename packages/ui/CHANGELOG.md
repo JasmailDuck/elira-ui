@@ -1,5 +1,11 @@
 # @elira-ui/ui
 
+## 0.0.11
+
+### Patch Changes
+
+- e7dee31: add page
+
 ## 0.0.10
 
 ### Patch Changes
