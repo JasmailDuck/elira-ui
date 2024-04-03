@@ -1,6 +1,7 @@
 import { IButtonTheme } from "./components/Button/types";
 import { ICardTheme } from "./components/Card/types";
 import { ILayoutTheme } from "./components/Layout/types";
+import { IPageTheme } from "./components/Page/types";
 import { ITooltipTheme } from "./components/Tooltip/types";
 export interface T_EliraProvidor {
   children: React.ReactNode;
@@ -16,4 +17,5 @@ export interface T_ComponentThemeConfig {
   layout?: ILayoutTheme;
   tooltip?: ITooltipTheme;
   card?: ICardTheme;
+  page?: IPageTheme;
 }
