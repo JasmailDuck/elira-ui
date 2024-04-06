@@ -1,5 +1,11 @@
 # @elira-ui/ui
 
+## 0.0.13
+
+### Patch Changes
+
+- 9483cfe: Testing new build script
+
 ## 0.0.12
 
 ### Patch Changes
