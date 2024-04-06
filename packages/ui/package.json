@@ -15,7 +15,7 @@
   ],
   "version": "0.0.11",
   "scripts": {
-    "build": "tsup src --format esm --dts"
+    "build": "tsup src/index.ts --format esm --dts"
   },
   "publishConfig": {
     "access": "public",
