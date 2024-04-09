@@ -1,3 +1,4 @@
+import { IAvatorTheme } from "./components/Avatar/types";
 import { IButtonTheme } from "./components/Button/types";
 import { ICardTheme } from "./components/Card/types";
 import { ILayoutTheme } from "./components/Layout/types";
@@ -18,4 +19,5 @@ export interface T_ComponentThemeConfig {
   tooltip?: ITooltipTheme;
   card?: ICardTheme;
   page?: IPageTheme;
+  avatar?: IAvatorTheme
 }
