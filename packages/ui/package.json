@@ -13,7 +13,7 @@
   "files": [
     "dist"
   ],
-  "version": "0.0.15",
+  "version": "0.0.16",
   "scripts": {
     "build": "tsup src/index.ts --format esm --dts"
   },
