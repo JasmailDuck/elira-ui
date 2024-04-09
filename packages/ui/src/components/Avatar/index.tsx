@@ -16,7 +16,7 @@ export const Avatar = React.forwardRef<
   return (
     <AvatarPrimitive.Root
       ref={ref}
-      className={twMerge(avatarVariant, className)}
+      className={twMerge(AvatarVariant, className)}
       {...props}
     />
   );
