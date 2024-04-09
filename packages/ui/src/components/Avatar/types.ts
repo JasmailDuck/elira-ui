@@ -6,6 +6,12 @@ export interface IAvatorTheme {
 
 export interface IAvatar {
   avatarVariant: string;
-  avatarImageVariant: string;
-  avatarFallBackVariant: string;
+}
+
+export interface IAvatarImage {
+  imageVariant: string;
+}
+
+export interface IAvatarFallBack {
+  fallbackVariant: string;
 }

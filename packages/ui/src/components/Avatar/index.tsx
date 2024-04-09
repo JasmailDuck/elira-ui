@@ -3,7 +3,7 @@ import * as React from "react";
 import * as AvatarPrimitive from "@radix-ui/react-avatar";
 import { twMerge } from "tailwind-merge";
 import { EliraThemeContext } from "../Providers";
-import { IAvatar } from "./types";
+import { IAvatar, IAvatarFallBack, IAvatarImage } from "./types";
 
 // Avatar
 export const Avatar = React.forwardRef<
@@ -26,11 +26,11 @@ Avatar.displayName = AvatarPrimitive.Root.displayName;
 // Avatar Image
 export const AvatarImage = React.forwardRef<
   React.ElementRef<typeof AvatarPrimitive.Image>,
-  React.ComponentPropsWithoutRef<typeof AvatarPrimitive.Image> & IAvatar
->(({ className, avatarImageVariant, ...props }, ref) => {
+  React.ComponentPropsWithoutRef<typeof AvatarPrimitive.Image> & IAvatarImage
+>(({ className, imageVariant, ...props }, ref) => {
   const AvatarImageVariant =
     React.useContext(EliraThemeContext).theme.avatar?.avatarImageType[
-      avatarImageVariant
+      imageVariant
     ];
   return (
     <AvatarPrimitive.Image
@@ -45,11 +45,11 @@ AvatarImage.displayName = AvatarPrimitive.Image.displayName;
 // Avatar Fallback
 export const AvatarFallback = React.forwardRef<
   React.ElementRef<typeof AvatarPrimitive.Fallback>,
-  React.ComponentPropsWithoutRef<typeof AvatarPrimitive.Fallback> & IAvatar
->(({ className, avatarFallBackVariant, ...props }, ref) => {
+  React.ComponentPropsWithoutRef<typeof AvatarPrimitive.Fallback> & IAvatarFallBack
+>(({ className, fallbackVariant, ...props }, ref) => {
   const AvatarFallBackVariant =
     React.useContext(EliraThemeContext).theme.avatar?.avatarFallBackType[
-      avatarFallBackVariant
+      fallbackVariant
     ];
 
   return (
