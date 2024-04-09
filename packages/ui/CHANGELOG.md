@@ -1,5 +1,11 @@
 # @elira-ui/ui
 
+## 0.0.15
+
+### Patch Changes
+
+- 8ac18ac: Added fixe
+
 ## 0.0.14
 
 ### Patch Changes
