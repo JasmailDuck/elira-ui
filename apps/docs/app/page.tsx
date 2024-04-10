@@ -1,5 +1,6 @@
 "use client";
 import {
+  Badge,
   Button,
   EliraThemeProvider,
   Layout,
@@ -28,6 +29,14 @@ export default function Home() {
             default:
               " h-dvh flex flex-col items-center gap-10 p-5 bg-neutral-300 ",
           },
+          badge: {
+            badgeSizeVariants: {
+              normal : " rounded-full px-2 py-1"
+            },
+            badgeVariants : {
+              red: " bg-red-600"
+            }
+          }
         },
       }}
     >
@@ -44,6 +53,10 @@ export default function Home() {
             This is a button with tooltip
           </Button>
         </Tooltip>
+
+      <Badge size="normal" variant="red">
+        Badge
+      </Badge>
       </Layout>
     </EliraThemeProvider>
   );
