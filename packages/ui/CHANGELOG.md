@@ -1,5 +1,11 @@
 # @elira-ui/ui
 
+## 0.0.18
+
+### Patch Changes
+
+- 2c1b0a4: Add badge
+
 ## 0.0.17
 
 ### Patch Changes
