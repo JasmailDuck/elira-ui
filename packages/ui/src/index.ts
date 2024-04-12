@@ -7,7 +7,9 @@ export * from "./components/Card";
 export * from "./components/Page";
 export * from "./components/Avatar";
 export * from "./components/Badge";
+export * from "./components/Popover";
 
+export * from "./components/Popover/types";
 export * from "./components/Tooltip/types";
 export * from "./components/Button/types";
 export * from "./components/Layout/types";

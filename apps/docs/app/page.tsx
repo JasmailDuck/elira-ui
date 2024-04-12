@@ -45,7 +45,7 @@ export default function Home() {
           This is a tooltip
         </Tooltip>
 
-        <Button variant="normal" size="lg">
+        <Button variant="" size="lg">
           This is a button
         </Button>
         <Tooltip className=" " message="A tooltip appeared">

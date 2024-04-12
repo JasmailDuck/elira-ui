@@ -4,6 +4,7 @@ import { IButtonTheme } from "./components/Button/types";
 import { ICardTheme } from "./components/Card/types";
 import { ILayoutTheme } from "./components/Layout/types";
 import { IPageTheme } from "./components/Page/types";
+import { IPopoverTheme } from "./components/Popover/types";
 import { ITooltipTheme } from "./components/Tooltip/types";
 export interface T_EliraProvidor {
   children: React.ReactNode;
@@ -22,4 +23,5 @@ export interface T_ComponentThemeConfig {
   page?: IPageTheme;
   avatar?: IAvatorTheme;
   badge?: IBadgeTheme;
+  popover?: IPopoverTheme;
 }
