@@ -1,5 +1,11 @@
 # @elira-ui/ui
 
+## 0.0.19
+
+### Patch Changes
+
+- 900ef59: Add popover
+
 ## 0.0.18
 
 ### Patch Changes
