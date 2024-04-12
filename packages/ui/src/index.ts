@@ -8,7 +8,9 @@ export * from "./components/Page";
 export * from "./components/Avatar";
 export * from "./components/Badge";
 export * from "./components/Popover";
+export * from "./components/Modal";
 
+export * from "./components/Modal/types";
 export * from "./components/Popover/types";
 export * from "./components/Tooltip/types";
 export * from "./components/Button/types";
