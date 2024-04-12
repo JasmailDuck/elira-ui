@@ -1,5 +1,11 @@
 # @elira-ui/ui
 
+## 0.0.20
+
+### Patch Changes
+
+- ed45158: Added modal
+
 ## 0.0.19
 
 ### Patch Changes
