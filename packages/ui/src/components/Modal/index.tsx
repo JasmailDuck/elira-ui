@@ -6,15 +6,15 @@ import { IModalContent, IModalOverlay } from "./types";
 import { EliraThemeContext } from "../Providers";
 import { twMerge } from "tailwind-merge";
 
-const Modal = DialogPrimitive.Root;
+export const Modal = DialogPrimitive.Root;
 
-const ModalTrigger = DialogPrimitive.Trigger;
+export const ModalTrigger = DialogPrimitive.Trigger;
 
-const ModalPortal = DialogPrimitive.Portal;
+export const ModalPortal = DialogPrimitive.Portal;
 
-const ModalClose = DialogPrimitive.Close;
+export const ModalClose = DialogPrimitive.Close;
 
-const ModalOverlay = React.forwardRef<
+export const ModalOverlay = React.forwardRef<
   React.ElementRef<typeof DialogPrimitive.Overlay>,
   React.ComponentPropsWithoutRef<typeof DialogPrimitive.Overlay> & IModalOverlay
 >(({ className, variant, ...props }, ref) => {
@@ -32,7 +32,7 @@ const ModalOverlay = React.forwardRef<
 });
 ModalOverlay.displayName = DialogPrimitive.Overlay.displayName;
 
-const ModalContent = React.forwardRef<
+export const ModalContent = React.forwardRef<
   React.ElementRef<typeof DialogPrimitive.Content>,
   React.ComponentPropsWithoutRef<typeof DialogPrimitive.Content> & IModalContent
 >(({ className, variant, modalOverlayVariant, children, ...props }, ref) => {
