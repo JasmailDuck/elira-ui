@@ -6,7 +6,7 @@ const EliraThemeContext = React.createContext<IEliraThemeConfig>(
   {} as IEliraThemeConfig
 );
 
-const EliraThemeProvider: React.FC<IEliraProvider<IEliraThemeConfig>> = ({ children, theme }) => {
+const EliraThemeProvider: React.FC<IEliraProvider> = ({ children, theme }) => {
   return (
     <EliraThemeContext.Provider value={theme}>
       {children}
