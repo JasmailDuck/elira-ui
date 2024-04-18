@@ -8,8 +8,8 @@ export const Layout = React.forwardRef<HTMLDivElement, ILayout>(
   ({ className, children, variant, ...rest }, ref) => {
     const C_EliraTheme = useContext(EliraThemeContext);
 
-    const LAYOUT_VARIANT = C_EliraTheme.theme.layout
-      ? C_EliraTheme.theme.layout[variant]
+    const LAYOUT_VARIANT = C_EliraTheme.layout
+      ? C_EliraTheme.layout[variant]
       : undefined;
 
     return (

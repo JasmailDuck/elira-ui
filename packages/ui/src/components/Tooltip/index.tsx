@@ -25,7 +25,7 @@ export const Tooltip: React.FC<ITooltip> = ({
         </TooltipPrimitive.Trigger>
 
         <TooltipPrimitive.TooltipContent
-          className={twMerge(C_EliraTheme.theme.tooltip?.className, className)}
+          className={twMerge(C_EliraTheme.tooltip?.className, className)}
         >
           {message}
         </TooltipPrimitive.TooltipContent>

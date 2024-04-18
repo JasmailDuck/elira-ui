@@ -5,10 +5,10 @@ import { twMerge } from "tailwind-merge";
 
 export const Badge: React.FC<IBadge> = ({ className, variant, size, ...rest }) => {
   const ELIRA_BADGE_VARIANT_CLASS =
-    useContext(EliraThemeContext).theme.badge?.badgeVariants[variant];
+    useContext(EliraThemeContext).badge?.badgeVariants[variant];
 
   const ELIRA_BADGE_SIZE_VARIANT_CLASS =
-    useContext(EliraThemeContext).theme.badge?.badgeSizeVariants[size];
+    useContext(EliraThemeContext).badge?.badgeSizeVariants[size];
 
   return (
     <div

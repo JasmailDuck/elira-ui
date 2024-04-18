@@ -10,7 +10,7 @@ export const AccordionItem = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Item>,
   React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Item>
 >(({ className, ...props }, ref) => {
-  const { theme } = useContext(EliraThemeContext);
+  
 
   return (
     <AccordionPrimitive.Item

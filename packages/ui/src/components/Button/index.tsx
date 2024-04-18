@@ -9,8 +9,8 @@ export const Button = React.forwardRef<HTMLButtonElement, IButton>(
     const C_EliraTheme = useContext(EliraThemeContext);
 
     const CONTEXT_BUTTON_VARIANT =
-      C_EliraTheme.theme.button?.buttonTypes[variant];
-    const CONTEXT_BUTTON_SIZE = C_EliraTheme.theme.button?.buttonSizes[size];
+      C_EliraTheme.button?.buttonTypes[variant];
+    const CONTEXT_BUTTON_SIZE = C_EliraTheme.button?.buttonSizes[size];
     return (
       <button
         ref={ref}

@@ -14,7 +14,7 @@ export const PopoverTrigger = React.forwardRef<
     IPopoverTrigger
 >(({ className, variant, children, ...rest }, ref) => {
   const ELIRA_POPOVER_TRIGGER_CLASS =
-    React.useContext(EliraThemeContext).theme.popover?.triggerVariant.variant[
+    React.useContext(EliraThemeContext).popover?.triggerVariant.variant[
       variant
     ];
 
@@ -36,7 +36,7 @@ export const PopoverContent = React.forwardRef<
     IPopoverContent
 >(({ className, variant, ...props }, ref) => {
   const ELIRA_POPOVER_CONTENT_CLASS =
-    React.useContext(EliraThemeContext).theme.popover?.contentVariant.variant[
+    React.useContext(EliraThemeContext).popover?.contentVariant.variant[
       variant
     ];
   return (

@@ -1,12 +1,12 @@
 "use client";
-import { T_EliraProvidor, IEliraThemeConfig } from "../../types";
+import { IEliraProvider, IEliraThemeConfig } from "../../types";
 import React from "react";
 
 const EliraThemeContext = React.createContext<IEliraThemeConfig>(
   {} as IEliraThemeConfig
 );
 
-const EliraThemeProvider: React.FC<T_EliraProvidor> = ({ children, theme }) => {
+const EliraThemeProvider: React.FC<IEliraProvider<IEliraThemeConfig>> = ({ children, theme }) => {
   return (
     <EliraThemeContext.Provider value={theme}>
       {children}

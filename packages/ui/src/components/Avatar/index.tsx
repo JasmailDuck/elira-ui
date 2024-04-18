@@ -11,7 +11,7 @@ export const Avatar = React.forwardRef<
   React.ComponentPropsWithoutRef<typeof AvatarPrimitive.Root> & IAvatar
 >(({ className, avatarVariant, ...props }, ref) => {
   const AvatarVariant =
-    React.useContext(EliraThemeContext).theme.avatar?.avatarType[avatarVariant];
+    React.useContext(EliraThemeContext).avatar?.avatarType[avatarVariant];
 
   return (
     <AvatarPrimitive.Root
@@ -29,7 +29,7 @@ export const AvatarImage = React.forwardRef<
   React.ComponentPropsWithoutRef<typeof AvatarPrimitive.Image> & IAvatarImage
 >(({ className, imageVariant, ...props }, ref) => {
   const AvatarImageVariant =
-    React.useContext(EliraThemeContext).theme.avatar?.avatarImageType[
+    React.useContext(EliraThemeContext).avatar?.avatarImageType[
       imageVariant
     ];
   return (
@@ -48,7 +48,7 @@ export const AvatarFallback = React.forwardRef<
   React.ComponentPropsWithoutRef<typeof AvatarPrimitive.Fallback> & IAvatarFallBack
 >(({ className, fallbackVariant, ...props }, ref) => {
   const AvatarFallBackVariant =
-    React.useContext(EliraThemeContext).theme.avatar?.avatarFallBackType[
+    React.useContext(EliraThemeContext).avatar?.avatarFallBackType[
       fallbackVariant
     ];
 

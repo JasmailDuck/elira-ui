@@ -8,8 +8,8 @@ export const Card = React.forwardRef<HTMLDivElement, ICardTypes>(
   ({ className, children, variant, ...rest }, ref) => {
     const C_EliraTheme = useContext(EliraThemeContext);
 
-    const CARD_VARIANT = C_EliraTheme.theme.card
-      ? C_EliraTheme.theme.card[variant]
+    const CARD_VARIANT = C_EliraTheme.card
+      ? C_EliraTheme.card[variant]
       : undefined;
     return (
       <div ref={ref} className={twMerge(CARD_VARIANT, className)} {...rest}>

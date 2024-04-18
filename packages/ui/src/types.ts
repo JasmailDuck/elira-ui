@@ -7,16 +7,13 @@ import { IModalTheme } from "./components/Modal/types";
 import { IPageTheme } from "./components/Page/types";
 import { IPopoverTheme } from "./components/Popover/types";
 import { ITooltipTheme } from "./components/Tooltip/types";
-export interface T_EliraProvidor {
+export interface IEliraProvider<T extends IEliraThemeConfig> {
   children: React.ReactNode;
-  theme: IEliraThemeConfig;
+  theme: T;
 }
+
 
 export interface IEliraThemeConfig {
-  theme: T_ComponentThemeConfig;
-}
-
-export interface T_ComponentThemeConfig {
   button: IButtonTheme;
   layout?: ILayoutTheme;
   tooltip?: ITooltipTheme;

@@ -19,7 +19,7 @@ export const ModalOverlay = React.forwardRef<
   React.ComponentPropsWithoutRef<typeof DialogPrimitive.Overlay> & IModalOverlay
 >(({ className, variant, ...props }, ref) => {
   const ELIRA_MODAL_OVERLAY_CLASS =
-    React.useContext(EliraThemeContext).theme.modal?.modalOverlayVariants
+    React.useContext(EliraThemeContext).modal?.modalOverlayVariants
       .variant[variant];
 
   return (
@@ -37,7 +37,7 @@ export const ModalContent = React.forwardRef<
   React.ComponentPropsWithoutRef<typeof DialogPrimitive.Content> & IModalContent
 >(({ className, variant, modalOverlayVariant, children, ...props }, ref) => {
   const ELIRA_MODAL_CONTENT_CLASS =
-    React.useContext(EliraThemeContext).theme.modal?.modalContentVariants
+    React.useContext(EliraThemeContext).modal?.modalContentVariants
       .variant[variant];
   return (
     <ModalPortal>
