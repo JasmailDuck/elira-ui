@@ -1,5 +1,11 @@
 # @elira-ui/ui
 
+## 0.0.22
+
+### Patch Changes
+
+- 2afb57a: Fix Types
+
 ## 0.0.21
 
 ### Patch Changes
