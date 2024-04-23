@@ -1,5 +1,11 @@
 # @elira-ui/ui
 
+## 0.0.24
+
+### Patch Changes
+
+- 17c1d18: Fixed modal
+
 ## 0.0.23
 
 ### Patch Changes
