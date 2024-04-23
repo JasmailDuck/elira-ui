@@ -1,20 +1,13 @@
-export interface IModalOverlayTheme {
-  variant: { [key: string]: string };
-}
 
-export interface IModalContentTheme {
-  variant: { [key: string]: string };
-}
+
+
 export interface IModalTheme {
-  modalOverlayVariants: IModalOverlayTheme;
-  modalContentVariants: IModalContentTheme;
+  modalOverlayVariants: { [key: string]: string };
+  modalContentVariants:  { [key: string]: string };
 }
 
-export interface IModalOverlay {
-  variant: string;
+export interface IModal {
+  overlayVariant:string
+  contentVariant:string;
 }
 
-export interface IModalContent {
-  variant: string;
-  modalOverlayVariant: string;
-}

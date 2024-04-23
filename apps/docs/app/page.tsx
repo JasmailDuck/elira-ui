@@ -4,6 +4,9 @@ import {
   Button,
   EliraThemeProvider,
   Layout,
+  Modal,
+  ModalContent,
+  ModalTrigger,
   Tooltip,
 } from "@elira-ui/ui/index";
 
@@ -35,7 +38,17 @@ export default function Home() {
           badgeVariants: {
             red: " bg-red-600",
           },
+
+          
         },
+        modal: {
+          modalContentVariants: {
+            default: " bg-white   "
+          },
+          modalOverlayVariants: {
+            default : "bg-black/50 fixed top-0 right-0 left-0 bottom-0 inset-0 h-screen w-screen flex items-center justify-center",
+          }
+        }
       }}
     >
       <Layout variant="default">
@@ -55,6 +68,12 @@ export default function Home() {
         <Badge size="normal" variant="red">
           Badge
         </Badge>
+
+
+        <Modal overlayVariant="default">
+          <ModalTrigger>Lol</ModalTrigger>
+          <ModalContent contentVariant="default">Lol Again</ModalContent>
+        </Modal>
       </Layout>
     </EliraThemeProvider>
   );
