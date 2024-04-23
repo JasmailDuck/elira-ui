@@ -18,17 +18,8 @@ export const Modal = React.forwardRef<
   React.ComponentPropsWithoutRef<typeof DialogPrimitive.Root> &
     Omit<IModal, "contentVariant">
 >(({ overlayVariant, children, ...props }, ref) => {
-  const ACCEPTABLE_CHILDREN = React.Children.map(children, (child) => {
-    if (
-      React.isValidElement(child) &&
-      (child.type === ModalTrigger || child.type === ModalContent)
-    ) {
-      return child;
-    }
-    throw new Error("Invalid child element. Only Modal Elements.");
-  });
 
-  const CHILDREN_ARRAY = React.Children.toArray(ACCEPTABLE_CHILDREN);
+  const CHILDREN_ARRAY = React.Children.toArray(children);
   const trigger = CHILDREN_ARRAY.find(
     (child) => React.isValidElement(child) && child.type === ModalTrigger
   );
