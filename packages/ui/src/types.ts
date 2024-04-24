@@ -6,6 +6,7 @@ import { ILayoutTheme } from "./components/Layout/types";
 import { IModalTheme } from "./components/Modal/types";
 import { IPageTheme } from "./components/Page/types";
 import { IPopoverTheme } from "./components/Popover/types";
+import { ITableTheme } from "./components/Table/types";
 import { ITooltipTheme } from "./components/Tooltip/types";
 export interface IEliraProvider {
   children: React.ReactNode;
@@ -23,4 +24,5 @@ export interface IEliraThemeConfig {
   badge?: IBadgeTheme;
   popover?: IPopoverTheme;
   modal?: IModalTheme;
+  table?: ITableTheme;
 }
