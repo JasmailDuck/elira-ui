@@ -1,5 +1,11 @@
 # @elira-ui/ui
 
+## 0.0.27
+
+### Patch Changes
+
+- d2e204c: Added table
+
 ## 0.0.26
 
 ### Patch Changes
