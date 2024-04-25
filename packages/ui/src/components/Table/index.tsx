@@ -10,13 +10,11 @@ export const Table = React.forwardRef<
   const ELIRA_TABLE_CLASS =
     React.useContext(EliraThemeContext).table?.tableVariants[tableVariant];
   return (
-    <div className="relative w-full overflow-auto">
-      <table
-        ref={ref}
-        className={twMerge(ELIRA_TABLE_CLASS, className)}
-        {...props}
-      />
-    </div>
+    <table
+      ref={ref}
+      className={twMerge(ELIRA_TABLE_CLASS, className)}
+      {...props}
+    />
   );
 });
 Table.displayName = "Table";
