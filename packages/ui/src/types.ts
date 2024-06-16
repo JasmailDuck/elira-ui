@@ -11,7 +11,7 @@ import { ITableTheme } from "./components/Table/types";
 import { ITooltipTheme } from "./components/Tooltip/types";
 export interface IEliraProvider {
   children: React.ReactNode;
-  theme: Partial<IEliraThemeConfig>;
+  theme: IEliraThemeConfig;
 }
 
 export interface IEliraThemeConfig {
