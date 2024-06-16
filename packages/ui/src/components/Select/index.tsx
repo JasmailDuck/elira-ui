@@ -114,11 +114,13 @@ export const SelectContent = React.forwardRef<
     },
     ref
   ) => {
+    const SelectContentVariant =
+      React.useContext(EliraThemeContext).select?.selectContentType[variant];
     return (
       <SelectPrimitive.Portal>
         <SelectPrimitive.Content
           ref={ref}
-          className={twMerge(className)}
+          className={twMerge(SelectContentVariant, className)}
           position={position}
           {...props}
         >
