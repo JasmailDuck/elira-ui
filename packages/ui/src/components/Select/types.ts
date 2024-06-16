@@ -12,6 +12,7 @@ export interface ISelectTheme {
     icon: { [key: string]: any };
   };
   selectContentType: { [key: string]: string };
+  selectViewPortType: { [key: string]: string };
   selectLabelType: { [key: string]: string };
   selectItemType: { [key: string]: string };
   selectSeparatorType: { [key: string]: string };
@@ -42,6 +43,9 @@ export interface ISelectScrollDownButton {
 
 export interface ISelectContent {
   variant: string;
+}
+export interface ISelectViewport {
+  viewPortVariant: string;
 }
 export interface ISelectLabel {
   variant: string;

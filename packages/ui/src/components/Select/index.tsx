@@ -116,6 +116,8 @@ export const SelectContent = React.forwardRef<
   ) => {
     const SelectContentVariant =
       React.useContext(EliraThemeContext).select?.selectContentType[variant];
+    const SelectViewportVariant =
+      React.useContext(EliraThemeContext).select?.selectContentType[variant];
     return (
       <SelectPrimitive.Portal>
         <SelectPrimitive.Content
