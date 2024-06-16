@@ -11,6 +11,7 @@ import {
   ISelectScrollDownButton,
   ISelectScrollUpButton,
   ISelectTrigger,
+  ISelectViewport,
 } from "./types";
 import { EliraThemeContext } from "../Providers";
 
@@ -98,7 +99,8 @@ export const SelectContent = React.forwardRef<
   React.ComponentPropsWithoutRef<typeof SelectPrimitive.Content> &
     ISelectContent &
     ISelectScrollDownButton &
-    ISelectScrollUpButton
+    ISelectScrollUpButton &
+    ISelectViewport
 >(
   (
     {
@@ -107,6 +109,7 @@ export const SelectContent = React.forwardRef<
       variant,
       downIcon,
       downVariant,
+      viewPortVariant,
       upIcon,
       upVariant,
       position = "popper",
@@ -117,7 +120,9 @@ export const SelectContent = React.forwardRef<
     const SelectContentVariant =
       React.useContext(EliraThemeContext).select?.selectContentType[variant];
     const SelectViewportVariant =
-      React.useContext(EliraThemeContext).select?.selectContentType[variant];
+      React.useContext(EliraThemeContext).select?.selectViewPortType[
+        viewPortVariant
+      ];
     return (
       <SelectPrimitive.Portal>
         <SelectPrimitive.Content
@@ -127,7 +132,7 @@ export const SelectContent = React.forwardRef<
           {...props}
         >
           <SelectScrollUpButton upIcon={upIcon} upVariant={upVariant} />
-          <SelectPrimitive.Viewport className={twMerge()}>
+          <SelectPrimitive.Viewport className={SelectViewportVariant}>
             {children}
           </SelectPrimitive.Viewport>
           <SelectScrollDownButton
