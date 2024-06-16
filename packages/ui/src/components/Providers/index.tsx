@@ -2,7 +2,7 @@
 import { IEliraProvider, IEliraThemeConfig } from "../../types";
 import React from "react";
 
-const EliraThemeContext = React.createContext<IEliraThemeConfig>(
+const EliraThemeContext = React.createContext<Partial<IEliraThemeConfig>>(
   {} as IEliraThemeConfig
 );
 
