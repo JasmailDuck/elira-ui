@@ -26,11 +26,11 @@ export const SelectTrigger = React.forwardRef<
     ISelectTrigger
 >(({ className, children, variant, icon, ...props }, ref) => {
   const SelectTriggerVariant =
-    React.useContext(EliraThemeContext).select.selectTriggerType.variants[
+    React.useContext(EliraThemeContext).select?.selectTriggerType.variants[
       variant
     ];
   const SelectTriggerIcon =
-    React.useContext(EliraThemeContext).select.selectTriggerType.icon[icon];
+    React.useContext(EliraThemeContext).select?.selectTriggerType.icon[icon];
   return (
     <SelectPrimitive.Trigger
       ref={ref}
@@ -50,10 +50,10 @@ export const SelectScrollUpButton = React.forwardRef<
     ISelectScrollUpButton
 >(({ className, upVariant, upIcon, ...props }, ref) => {
   const SelectScrollUpVariant =
-    React.useContext(EliraThemeContext).select.selectScrollUpButtonType
+    React.useContext(EliraThemeContext).select?.selectScrollUpButtonType
       .variants[upVariant];
   const SelectScrollUpIcon =
-    React.useContext(EliraThemeContext).select.selectScrollUpButtonType.icon[
+    React.useContext(EliraThemeContext).select?.selectScrollUpButtonType.icon[
       upVariant
     ];
   return (
@@ -74,10 +74,10 @@ export const SelectScrollDownButton = React.forwardRef<
     ISelectScrollDownButton
 >(({ className, downVariant, downIcon, ...props }, ref) => {
   const SelectScrollDownVariant =
-    React.useContext(EliraThemeContext).select.selectScrollDownButtonType
+    React.useContext(EliraThemeContext).select?.selectScrollDownButtonType
       .variants[downVariant];
   const SelectScrollDownIcon =
-    React.useContext(EliraThemeContext).select.selectScrollDownButtonType.icon[
+    React.useContext(EliraThemeContext).select?.selectScrollDownButtonType.icon[
       downIcon
     ];
   return (
@@ -142,7 +142,7 @@ export const SelectLabel = React.forwardRef<
   React.ComponentPropsWithoutRef<typeof SelectPrimitive.Label> & ISelectLabel
 >(({ className, variant, ...props }, ref) => {
   const SelectLabelVariant =
-    React.useContext(EliraThemeContext).select.selectLabelType[variant];
+    React.useContext(EliraThemeContext).select?.selectLabelType[variant];
   return (
     <SelectPrimitive.Label
       ref={ref}
@@ -164,14 +164,14 @@ export const SelectItem = React.forwardRef<
     ref
   ) => {
     const SelectItemVariant =
-      React.useContext(EliraThemeContext).select.selectItemType[variant];
+      React.useContext(EliraThemeContext).select?.selectItemType[variant];
 
     const SelectItemIndicatorVariant =
-      React.useContext(EliraThemeContext).select.selectItemIndicator.variants[
+      React.useContext(EliraThemeContext).select?.selectItemIndicator.variants[
         variant
       ];
     const SelectItemIndicatorIcon =
-      React.useContext(EliraThemeContext).select.selectItemIndicator.icon[
+      React.useContext(EliraThemeContext).select?.selectItemIndicator.icon[
         variant
       ];
 
@@ -200,7 +200,7 @@ export const SelectSeparator = React.forwardRef<
     ISelectLabel
 >(({ className, variant, ...props }, ref) => {
   const SelectSeparatorVariant =
-    React.useContext(EliraThemeContext).select.selectSeparatorType[variant];
+    React.useContext(EliraThemeContext).select?.selectSeparatorType[variant];
   return (
     <SelectPrimitive.Separator
       ref={ref}
