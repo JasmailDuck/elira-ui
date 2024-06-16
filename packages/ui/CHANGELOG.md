@@ -1,5 +1,11 @@
 # @elira-ui/ui
 
+## 0.0.30
+
+### Patch Changes
+
+- a484e7a: Fix select content
+
 ## 0.0.29
 
 ### Patch Changes
