@@ -1,5 +1,12 @@
 # @elira-ui/ui
 
+## 0.0.29
+
+### Patch Changes
+
+- 9c77480: Added Select
+- 3b039fc: Test Select
+
 ## 0.0.28
 
 ### Patch Changes
