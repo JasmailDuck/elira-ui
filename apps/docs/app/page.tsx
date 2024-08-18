@@ -9,8 +9,16 @@ import {
   ModalTrigger,
   Tooltip,
 } from "@elira-ui/ui/index";
+import AnimatedCard from "./Animated-Card";
+import { useState } from "react";
+import AutoResizingDiv from "./Animated-Card";
 
 export default function Home() {
+  const [content, setContent] = useState<boolean>(false);
+
+  const handleClick = () => {
+    setContent(!content);
+  };
   return (
     <EliraThemeProvider
       theme={{
@@ -38,20 +46,19 @@ export default function Home() {
           badgeVariants: {
             red: " bg-red-600",
           },
-
-          
         },
         modal: {
           modalContentVariants: {
-            default: " bg-white   "
+            default: " bg-white   ",
           },
           modalOverlayVariants: {
-            default : "bg-black/50 fixed top-0 right-0 left-0 bottom-0 inset-0 h-screen w-screen flex items-center justify-center",
-          }
-        }
+            default:
+              "bg-black/50 fixed top-0 right-0 left-0 bottom-0 inset-0 h-screen w-screen flex items-center justify-center",
+          },
+        },
       }}
     >
-      <Layout variant="default">
+      <Layout variant="default" className="">
         <Tooltip className=" " message=" A tooltip appeared">
           This is a tooltip
         </Tooltip>
@@ -69,6 +76,40 @@ export default function Home() {
           Badge
         </Badge>
 
+        <button
+          className=" absolute bottom-0 z-20 bg-red-500"
+          onClick={handleClick}
+        >
+          Toggle Content
+        </button>
+
+        <div className=" absolute  z-10 left-0 ">
+          <AutoResizingDiv>
+            {content ? (
+              <p className="p-4 w-1/2">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptas fugiat maxime officia rem quaerat nemo amet quas non
+                inventore accusantium quod eos distinctio, cum ad assumenda
+                corporis natus dolorum accusamus!
+              </p>
+            ) : (
+              <p className="p-4 w-1/3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga et
+                illo adipisci minus nam quae corporis ab molestiae alias optio
+                est nemo sequi, cumque eos eveniet voluptatibus necessitatibus
+                totam! Unde blanditiis iure officia, assumenda autem totam dicta
+                laudantium nam ipsa itaque exercitationem eveniet voluptas.
+                Deserunt at nobis maiores. Veritatis soluta sapiente nemo omnis
+                quos perferendis cupiditate nisi, impedit ea? Et molestiae,
+                repellat minus corporis aspernatur omnis veritatis placeat
+                quisquam saepe quae quos dolores sequi earum quo accusamus ab
+                similique necessitatibus beatae ipsa. Odio recusandae unde
+                veniam, consequatur nobis optio incidunt eligendi fugit
+                repellat, qui ex autem esse sint cumque delectus!
+              </p>
+            )}
+          </AutoResizingDiv>
+        </div>
 
         <Modal overlayVariant="default">
           <ModalTrigger>Lol</ModalTrigger>
