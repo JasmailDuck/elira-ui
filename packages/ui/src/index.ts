@@ -11,6 +11,7 @@ export * from "./components/Popover";
 export * from "./components/Modal";
 export * from "./components/Table";
 export * from "./components/Select";
+export * from "./components/DynamicDiv";
 
 export * from "./components/Table/types";
 export * from "./components/Modal/types";
@@ -23,4 +24,5 @@ export * from "./components/Page/types";
 export * from "./components/Avatar/types";
 export * from "./components/Badge/types";
 export * from "./components/Select/types";
+export * from "./components/DynamicDiv/types";
 export * from "./types";

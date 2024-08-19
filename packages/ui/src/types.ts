@@ -2,6 +2,7 @@ import { IAvatorTheme } from "./components/Avatar/types";
 import { IBadgeTheme } from "./components/Badge/types";
 import { IButtonTheme } from "./components/Button/types";
 import { ICardTheme } from "./components/Card/types";
+import { IDynamicDivTheme } from "./components/DynamicDiv/types";
 import { ILayoutTheme } from "./components/Layout/types";
 import { IModalTheme } from "./components/Modal/types";
 import { IPageTheme } from "./components/Page/types";
@@ -26,4 +27,5 @@ export interface IEliraThemeConfig {
   modal: IModalTheme;
   table: ITableTheme;
   select: ISelectTheme;
+  dynamicdiv: IDynamicDivTheme;
 }

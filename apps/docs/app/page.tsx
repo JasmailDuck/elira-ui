@@ -2,6 +2,7 @@
 import {
   Badge,
   Button,
+  DynamicDiv,
   EliraThemeProvider,
   Layout,
   Modal,
@@ -9,9 +10,9 @@ import {
   ModalTrigger,
   Tooltip,
 } from "@elira-ui/ui/index";
-import AnimatedCard from "./Animated-Card";
+
 import { useState } from "react";
-import AutoResizingDiv from "./Animated-Card";
+
 
 export default function Home() {
   const [content, setContent] = useState<boolean>(false);
@@ -56,6 +57,10 @@ export default function Home() {
               "bg-black/50 fixed top-0 right-0 left-0 bottom-0 inset-0 h-screen w-screen flex items-center justify-center",
           },
         },
+        dynamicdiv: {
+          default:
+            "transition-all duration-500 ease-[cubic-bezier(.67,0,0,1.02)] bg-white rounded-lg absolute z-10",
+        },
       }}
     >
       <Layout variant="default" className="">
@@ -77,23 +82,23 @@ export default function Home() {
         </Badge>
 
         <button
-          className=" absolute bottom-0 z-20 bg-red-500"
+          className=" absolute z-10 bottom-0 bg-red-500"
           onClick={handleClick}
         >
           Toggle Content
         </button>
 
-        <div className=" absolute  z-10 left-0 ">
-          <AutoResizingDiv>
+       
+          <DynamicDiv variant="default">
             {content ? (
-              <p className="p-4 w-1/2">
+              <p className="p-4 w-[50rem] h-[20rem] ">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Voluptas fugiat maxime officia rem quaerat nemo amet quas non
                 inventore accusantium quod eos distinctio, cum ad assumenda
                 corporis natus dolorum accusamus!
               </p>
             ) : (
-              <p className="p-4 w-1/3">
+              <p className="p-4 w-[40rem] h-[30rem] ">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga et
                 illo adipisci minus nam quae corporis ab molestiae alias optio
                 est nemo sequi, cumque eos eveniet voluptatibus necessitatibus
@@ -108,8 +113,8 @@ export default function Home() {
                 repellat, qui ex autem esse sint cumque delectus!
               </p>
             )}
-          </AutoResizingDiv>
-        </div>
+          </DynamicDiv>
+  
 
         <Modal overlayVariant="default">
           <ModalTrigger>Lol</ModalTrigger>
